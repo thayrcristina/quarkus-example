@@ -18,7 +18,7 @@ public class BookController {
 
     @GET
     @Path("/{id}")
-    public Response findById(@PathParam("name") long id) {
+    public Response findById(@PathParam("id") long id) {
         return Response.ok(bookService.findById(id)).status(HttpResponseStatus.OK.code()).build();
     }
 
